@@ -1,12 +1,13 @@
 
+package baitap;
+import java.util.Scanner;
 public class Ex2 {
     public static void main(String[] args){
-        int x=1;
-        int y=x + ++x - x-- - x++ + x - x--;
-        System.out.println("y = "+ y);
-        System.out.println("x = "+ x);
-        int z=x-x---x+++--x-x+x--+x;
-        System.out.println("z = "+ z);
-        System.out.println("x = "+ x);
+        Scanner scanner= new Scanner(System.in);
+        System.out.print("Nhap ten: ");
+        String string=scanner.nextLine();
+        System.out.print("Nhap tuoi: ");
+        int tuoi=scanner.nextInt();
+        System.out.println("Hello "+string+" "+tuoi);
     }
 }
