@@ -1,15 +1,24 @@
+package lec5_loop;
 
-package baitap;
 import java.util.Scanner;
+
 public class ex9 {
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhap so nguyen: ");
-        int n1 = scanner.nextInt();
-        scanner.nextLine();
-        System.out.print("Nhap gi do: ");
-        String s1=scanner.nextLine();
-        System.out.println(n1);
-        System.out.println(s1);
+        System.out.print("Nhap so: ");
+        int n = scanner.nextInt();
+        int dem = 0;
+        double sum = 0;
+        while (n != 0) {
+
+            if (n != 0) {
+                sum += n;
+                dem++;
+            }
+            System.out.print("Nhap so: ");
+            n = scanner.nextInt();
+        }
+        System.out.println("Trung binh cong: " + sum / dem);
     }
 }
